@@ -30,3 +30,12 @@ document.getElementById('close').onclick = function but1 (){
   document.getElementById('thanks').style.display = "none";
 }
 ```
+
+## **Experience**
+
+## **Education**
+* **University:** Belarusian National Technical University, Equipment and technology of welding production
+* **Courses:** [Hexlet:"Основы JavaScript"](https://ru.hexlet.io/courses/js-basics), [Hexlet:"Основы современной верстки"](https://ru.hexlet.io/courses/layout-designer-basics), [Stepik:"Веб-разработка для начинающих: HTML и CSS"](https://stepik.org/course/38218/promo)
+
+## **English**
+**A1**
