@@ -1,1 +1,1 @@
-# rsschool-cv
+(https://github.com/AndreyGateluyk/rsschool-cv/tree/gh-pages)
