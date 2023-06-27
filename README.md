@@ -1,1 +1,1 @@
-(https://github.com/AndreyGateluyk/rsschool-cv/tree/gh-pages)
+https://AndreyGateluyk.github.io/rsschool-cv/cv
