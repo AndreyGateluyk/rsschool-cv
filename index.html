@@ -3,8 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul id="navigation">
+          <li><a href="">Contact info</a></li>
+          <li><a href="">About Me</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">Code example</a></li>
+          <li><a href="">Experience</a></li>
+          <li><a href="">Education</a></li>
+          <li><a href="">English</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacts">
+        <div class="contacts__foto">
+          <img src="photo.jpg" alt="photo">
+        </div>
+        <div class="contacts__info">
+          <h1>Andrey Gateluyk</h1>
+          <div class="contacts__text">Phone:<a href="tel:+375257238842">+375257238842</a></div>
+          <div class="contacts__text">Phone:<a href="mailto:gatelyuk97@mail.ru">gatelyuk97@mail.ru</a></div>
+          <div class="contacts__text">Location: Belarus, Minsk</div>
+          <div class="contacts__text">GitHub:<a href="https://github.com/AndreyGateluyk?tab=repositories">AndreyGateluyk</a></div>
+        </div>
+      </section>
+      <section class="about">
+        <h2>About Me</h2>
+        <div class="text">
+          I am 27 years old, I work as a welding and flaw detection engineer.
+          But I want to change my field of activity. I've already studied front-end development a little.
+          In this course I want to focus more on Javascript.
+        </div>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SCSS</li>
+          <li>JS Basic</li>
+          <li>TS Basic</li>
+          <li>Git</li>
+          <li>Figma</li>
+          <li>NodeJS</li>
+        </ul>
+      </section>
+      <section class="code">
+        <h2>Code example</h2>
+        <div class="text">
+          function getTotalPrice() {
+            const pricesArr = document.querySelectorAll('.item-price__number');
+            let priceTotal = 0;
+            pricesArr.forEach(elem => {
+              priceTotal += Number(elem.innerText)
+            });
+            document.querySelector('.order_price__number').innerText = priceTotal;
+          }
+        </div>
+      </section>
+      <section class="experince">
+        <h2>Experience</h2>
+        <div class="text">
+          No commercial development experience.
+          Educational projects can be viewed on my page <a href="https://github.com/AndreyGateluyk?tab=repositories">GitHub</a>
+        </div>
+      </section>
+      <section class="education">
+        <h2>Education</h2>
+        <div class="text">
+          Graduated from the Belarusian National Technical University with a degree in Equipment and Welding Technology in 2019.
+        </div>
+        <div class="text">
+          Сompleted the following courses:
+        </div>
+        <ul class="education__cources">
+          <li><a href="https://ru.hexlet.io/courses/js-basics"></a>Hexlet:"Основы JavaScript</li>
+          <li><a href="https://ru.hexlet.io/courses/layout-designer-basics"></a>Hexlet:"Основы современной верстки</li>
+          <li><a href="https://stepik.org/course/38218/promo"></a>Stepik:"Веб-разработка для начинающих: HTML и CSS</li>
+        </ul>
+      </section>
+      <section class="english">
+        <h2>English</h2>
+        <div class="text">
+          I speak English at A2 level
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__rss">
+        <div class="footer__rss-item">2023</div>
+        <div class="footer__rss-item"><a href="https://rs.school/courses/javascript-preschool-ru">The Rolling Scopes School</a></div>
+        <div class="footer__rss-item"><a href="https://github.com/AndreyGateluyk">AndreyGateluyk</a></div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
