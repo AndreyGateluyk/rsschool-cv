@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
   <title>CV</title>
 </head>
 <body>
@@ -11,30 +14,32 @@
     <header>
       <nav>
         <ul id="navigation">
-          <li><a href="">Contact info</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Code example</a></li>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Education</a></li>
-          <li><a href="">English</a></li>
+          <li><a href="#contacts">Contact info</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code example</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#english">English</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__foto">
           <img src="photo.jpg" alt="photo">
         </div>
         <div class="contacts__info">
           <h1>Andrey Gateluyk</h1>
-          <div class="contacts__text">Phone:<a href="tel:+375257238842">+375257238842</a></div>
-          <div class="contacts__text">Phone:<a href="mailto:gatelyuk97@mail.ru">gatelyuk97@mail.ru</a></div>
-          <div class="contacts__text">Location: Belarus, Minsk</div>
-          <div class="contacts__text">GitHub:<a href="https://github.com/AndreyGateluyk?tab=repositories">AndreyGateluyk</a></div>
+          <ul>
+            <li class="contacts__text">Phone: <a href="tel:+375257238842">+375257238842</a></li>
+            <li class="contacts__text">Email: <a href="mailto:gatelyuk97@mail.ru">gatelyuk97@mail.ru</a></li>
+            <li class="contacts__text">Location: Belarus, Minsk</li>
+            <li class="contacts__text">GitHub: <a href="https://github.com/AndreyGateluyk?tab=repositories">AndreyGateluyk</a></li>
+          </ul>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h2>About Me</h2>
         <div class="text">
           I am 27 years old, I work as a welding and flaw detection engineer.
@@ -42,40 +47,44 @@
           In this course I want to focus more on Javascript.
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>JS Basic</li>
-          <li>TS Basic</li>
-          <li>Git</li>
-          <li>Figma</li>
-          <li>NodeJS</li>
+        <ul class="skills__list">
+          <li class="skills__list-item">HTML</li>
+          <li class="skills__list-item">CSS</li>
+          <li class="skills__list-item">SCSS</li>
+          <li class="skills__list-item">JS Basic</li>
+          <li class="skills__list-item">TS Basic</li>
+          <li class="skills__list-item">Git</li>
+          <li class="skills__list-item">Figma</li>
+          <li class="skills__list-item">NodeJS</li>
         </ul>
       </section>
-      <section class="code">
+      <section class="code" id="code">
         <h2>Code example</h2>
-        <div class="text">
-          function getTotalPrice() {
-            const pricesArr = document.querySelectorAll('.item-price__number');
-            let priceTotal = 0;
-            pricesArr.forEach(elem => {
-              priceTotal += Number(elem.innerText)
-            });
-            document.querySelector('.order_price__number').innerText = priceTotal;
-          }
+        <div class="code__text">
+          <pre>
+            <code>
+function getTotalPrice() {
+  const pricesArr = document.querySelectorAll('.item-price__number');
+  let priceTotal = 0;
+  pricesArr.forEach(elem => {
+    priceTotal += Number(elem.innerText)
+  });
+  document.querySelector('.order_price__number').innerText = priceTotal;
+}
+            </code>
+          </pre>
         </div>
       </section>
-      <section class="experince">
+      <section class="experince" id="experience">
         <h2>Experience</h2>
         <div class="text">
           No commercial development experience.
-          Educational projects can be viewed on my page <a href="https://github.com/AndreyGateluyk?tab=repositories">GitHub</a>
+          Pet-projects can be viewed on my page <a href="https://github.com/AndreyGateluyk?tab=repositories">GitHub</a>
         </div>
       </section>
-      <section class="education">
+      <section class="education" id="education">
         <h2>Education</h2>
         <div class="text">
           Graduated from the Belarusian National Technical University with a degree in Equipment and Welding Technology in 2019.
@@ -84,22 +93,22 @@
           Сompleted the following courses:
         </div>
         <ul class="education__cources">
-          <li><a href="https://ru.hexlet.io/courses/js-basics"></a>Hexlet:"Основы JavaScript</li>
-          <li><a href="https://ru.hexlet.io/courses/layout-designer-basics"></a>Hexlet:"Основы современной верстки</li>
-          <li><a href="https://stepik.org/course/38218/promo"></a>Stepik:"Веб-разработка для начинающих: HTML и CSS</li>
+          <li class="education__cources-item"><a href="https://ru.hexlet.io/courses/js-basics"></a>Hexlet: "Основы JavaScript"</li>
+          <li class="education__cources-item"><a href="https://ru.hexlet.io/courses/layout-designer-basics"></a>Hexlet: "Основы современной верстки"</li>
+          <li class="education__cources-item"><a href="https://stepik.org/course/38218/promo"></a>Stepik: "Веб-разработка для начинающих: HTML и CSS"</li>
         </ul>
       </section>
-      <section class="english">
+      <section class="english" id="english">
         <h2>English</h2>
         <div class="text">
-          I speak English at A2 level
+          I speak English at A2 level. Currently studying English on my own.
         </div>
       </section>
     </main>
     <footer>
       <div class="footer__rss">
-        <div class="footer__rss-item">2023</div>
-        <div class="footer__rss-item"><a href="https://rs.school/courses/javascript-preschool-ru">The Rolling Scopes School</a></div>
+        <div class="footer__rss-item">2024</div>
+        <div class="footer__rss-item"><a href="https://rs.school/courses/javascript-preschool-ru"><img src="rs-school-logo.svg" alt="logo"></a></div>
         <div class="footer__rss-item"><a href="https://github.com/AndreyGateluyk">AndreyGateluyk</a></div>
       </div>
     </footer>
